@@ -106,16 +106,16 @@ body {
   font-size: larger;
 }
 .hire-me-button {
-  width: 176px;
+  width: 192px;
   height: 56px;
   background-color: rgb(129, 194, 116);
   border-color: rgb(127, 189, 114);
-  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.15);
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.1);
   font-size: 18px;
   margin: 0px;
 }
 
-.profile-page-header-details__player-name {
+.profile-page-header-details__user-name {
   font-size: 2.5em;
   font-weight: 600;
 }
@@ -126,7 +126,29 @@ body {
   font-size: 18px;
   row-gap: 16px;
 }
+/* player-stats */
+.user-stats {
+  padding: 0px 96px 24px 96px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+  margin-top: 24px;
+}
+.user-stats-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+  padding: 16px 0px;
+  flex-grow: 1;
+  row-gap: 16px;
+}
+.user-stats-card__value {
+  font-size: 2em;
+}
 /* Bio */
 .profile-page-bio {
   padding: 0px 96px 24px 96px;
@@ -134,4 +156,23 @@ body {
 
 .profile-page-bio__content {
   line-height: 1.5;
+}
+
+/* posts */
+.user-posts {
+  padding: 0px 96px 24px 96px;
+}
+
+.user-posts__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-posts__content {
+  line-height: 1.25;
+}
+
+.user-posts_post {
+  margin-bottom: 20px;
 }
