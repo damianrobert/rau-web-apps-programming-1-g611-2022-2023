@@ -123,4 +123,15 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  font-size: 18px;
+  row-gap: 16px;
+}
+
+/* Bio */
+.profile-page-bio {
+  padding: 0px 96px 24px 96px;
+}
+
+.profile-page-bio__content {
+  line-height: 1.5;
 }
