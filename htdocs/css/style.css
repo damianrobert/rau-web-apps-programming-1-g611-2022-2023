@@ -9,7 +9,6 @@ body {
 }
 
 .button {
-  
   width: 136px;
   height: 40px;
   background-color: var(--eagle-green);
@@ -26,14 +25,12 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0px 4px;
-
 }
 
-.button:hover{
-
-  background-color:white;
+.button:hover {
+  background-color: white;
   color: #014d55;
-  transition: 0.5s ;   
+  transition: 0.5s;
 }
 
 /* Navbar */
@@ -45,7 +42,6 @@ body {
   justify-content: center;
   align-items: center;
   box-shadow: 0 0 10px 1px;
-  
 }
 
 .header-wrapper {
@@ -60,8 +56,9 @@ body {
   display: flex;
   flex-direction: row;
 }
-
-
+.abutton {
+  text-decoration: none;
+}
 .auth-button__account {
   background-color: var(--eagle-green);
   color: #f8f9ff;
@@ -76,20 +73,16 @@ body {
 .auth-button__signout {
   width: 160px;
 }
-.auth-button__signout:hover{
-
-  background-color:#b9b9b9;
+.auth-button__signout:hover {
+  background-color: #b9b9b9;
   color: #014d55;
-  transition: 0.5s ; 
-
+  transition: 0.5s;
 }
 
-.auth-button__account:hover{
-
-  background-color:white;
+.auth-button__account:hover {
+  background-color: white;
   color: #014d55;
-  transition: 0.5s ; 
-
+  transition: 0.5s;
 }
 /* main-content */
 
@@ -107,7 +100,6 @@ body {
   padding: 48px 96px 24px 96px;
   display: flex;
   justify-content: space-between;
-  
 }
 
 .profile-page-header__avatar {
@@ -148,11 +140,10 @@ body {
   font-size: 18px;
   margin: 0px;
 }
-.hire-me-button:hover{
-  
-  background-color:#ffbb00;
+.hire-me-button:hover {
+  background-color: #ffbb00;
   color: #000000;
-  transition: 0.3s ; 
+  transition: 0.3s;
 }
 .profile-page-header-details__user-name {
   font-size: 2.5em;
