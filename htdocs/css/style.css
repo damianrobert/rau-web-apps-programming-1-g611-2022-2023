@@ -214,3 +214,7 @@ body {
 .user-posts_post {
   margin-bottom: 20px;
 }
+
+.user-posts_editdelete {
+  text-align: right;
+}
