@@ -1,0 +1,17 @@
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+.stats-cards-wrapper {
+  grid-column-start: 3;
+  grid-column-end: 11;
+}
+.stats-card {
+  width: 150px;
+  height: 100px;
+  border-right: 3px solid #ccdb2b;
+  border-radius: 0px 40px 0px 0px;
+  border-top: 5px solid #ccdb2b;
+  background-color: #ffffff;
+}
