@@ -56,9 +56,11 @@ body {
   display: flex;
   flex-direction: row;
 }
+
 .abutton {
   text-decoration: none;
 }
+
 .auth-button__account {
   background-color: var(--eagle-green);
   color: #f8f9ff;

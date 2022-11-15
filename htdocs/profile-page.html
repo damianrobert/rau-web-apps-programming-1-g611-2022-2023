@@ -33,20 +33,20 @@
         <div class="profile-page-header-right">
           <div class="profile-page-header__avatar"></div>
           <div class="profile-page-header-details">
-            <span class="profile-page-header-details__user-name"
+            <span id="player-name-span" class="profile-page-header-details__user-name"
               >Player Name</span
             >
             <div class="profile-page-header-details__details">
-              <span>Last time active: Now</span>
-              <span>Rating: 4.32/5</span>
+              <span id="player-last-active-at-span">Last time active: Now</span>
+              <span id="player-rating-span">Rating: 4.32/5</span>
             </div>
           </div>
         </div>
         <div class="profile-page-header-aside">
           <div class="button hire-me-button">Hire me</div>
           <div class="profile-page-header-aside__details">
-            <span>Locatie: Bucuresti</span>
-            <span>Email: example@gmail.com</span>
+            <span id="player-location-span">Locatie: Bucuresti</span>
+            <span id="player-email-span">Email: example@gmail.com</span>
           </div>
         </div>
       </header>
@@ -55,18 +55,18 @@
         <div class="user-stats-card">
           <span><i class="fa-solid fa-hand fa-2xl"></i></span>
           <span>Numar maini</span>
-          <span class="user-stats-card__value">231</span>
+          <span id="player-hands-span" class="user-stats-card__value">231</span>
         </div>
         <div class="user-stats-card">
           <span><i class="fa-solid fa-trophy fa-2xl"></i></span>
           <span>Win rate</span>
-          <span class="user-stats-card__value">86.53%</span>
+          <span id="player-win-rate-span" class="user-stats-card__value">86.53%</span>
         </div>
       </div>
 
       <section class="profile-page-bio">
         <h2>Bio</h2>
-        <p class="profile-page-bio__content">
+        <p id="player-bio-paragraph" class="profile-page-bio__content">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam purus
           velit, ultricies sed tincidunt ut, mattis vehicula massa. Aenean
           aliquet tincidunt nulla non eleifend. Morbi leo quam, consequat vel
@@ -142,5 +142,6 @@
         </div>
       </div>
     </div>
+    <script src="js/profile-page.js"></script>
   </body>
 </html>

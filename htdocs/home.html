@@ -3,6 +3,10 @@
   <head>
     <link rel="stylesheet" href="css/home.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
   </head>
   <body>
     <header class="page-header">
@@ -19,10 +23,36 @@
       </div>
     </header>
     <div class="main-grid">
-      <div class="game-wrapper">
-        <canvas class="canvas-game"></canvas>
+      <div class="stats-cards-wrapper">
+        <div class="stats-card">
+          <div class="stats-card__content">
+            <i class="fa-solid fa-credit-card stats-card__content-icon"></i>
+            <span class="stats-card__content-text">Balance: $800</span>
+          </div>
+        </div>
+        <div class="stats-card">
+          <div class="stats-card__content">
+            <i class="fa-regular fa-hand stats-card__content-icon"></i>
+            <span class="stats-card__content-text">Total: 18 </span>
+          </div>
+        </div>
+        <div class="stats-card">
+          <div class="stats-card__content">
+            <i class="fa-solid fa-coins stats-card__content-icon"></i>
+            <span class="stats-card__content-text">Bet: $10</span>
+          </div>
+        </div>
+        <div class="stats-card">
+          <div class="stats-card__content">
+            <i class="fa-solid fa-hand stats-card__content-icon"></i>
+            <span class="stats-card__content-text">Total Dealer: 17</span>
+          </div>
+        </div>
       </div>
-      <div class="playerlist">player list</div>
+
+      <div class="game-canvs">
+        <canvas id="viewport" width="750" height="600"></canvas>
+      </div>
     </div>
   </body>
 </html>
