@@ -40,6 +40,25 @@
   margin-top: 12px;
   font-size: 14px;
 }
+
+.bottom-menu {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 3;
+  grid-column-end: 11;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/*.hit-btn {
+  background-color: #57a913;
+}
+
+.hit-btn:hover {
+  background-color: #539b18;
+  transition: 0.5s;
+}*/
 .game-wrapper {
   grid-column-start: 2;
   grid-column-end: 9;
