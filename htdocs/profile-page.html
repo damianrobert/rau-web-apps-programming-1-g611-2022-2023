@@ -18,12 +18,33 @@
           <div>
             <a href="home.html" class="button nav-button abutton"> Game </a>
           </div>
-          <div class="button nav-button">Players</div>
-          <div class="button nav-button">Social</div>
+          <div>
+            <a href="players.html" class="button nav-button abutton">
+              Players
+            </a>
+          </div>
+          <div>
+            <a href="social.html" class="button nav-button abutton"> Social </a>
+          </div>
         </nav>
         <div class="auth-buttons">
-          <div class="button auth-button__account">Account</div>
-          <div class="button auth-button__signout">Sign out</div>
+          <div>
+            <a
+              href="account.html"
+              class="button nav-button abutton auth-button__account"
+            >
+              Profile Tab
+            </a>
+          </div>
+          <div>
+            <a
+              href="signin.html"
+              onclick="return confirm('Are you sure?')"
+              class="button nav-button abutton auth-button__signout"
+            >
+              Signout
+            </a>
+          </div>
         </div>
       </div>
     </header>
@@ -33,7 +54,9 @@
         <div class="profile-page-header-right">
           <div class="profile-page-header__avatar"></div>
           <div class="profile-page-header-details">
-            <span id="player-name-span" class="profile-page-header-details__user-name"
+            <span
+              id="player-name-span"
+              class="profile-page-header-details__user-name"
               >Player Name</span
             >
             <div class="profile-page-header-details__details">
@@ -60,7 +83,9 @@
         <div class="user-stats-card">
           <span><i class="fa-solid fa-trophy fa-2xl"></i></span>
           <span>Win rate</span>
-          <span id="player-win-rate-span" class="user-stats-card__value">86.53%</span>
+          <span id="player-win-rate-span" class="user-stats-card__value"
+            >86.53%</span
+          >
         </div>
       </div>
 
@@ -98,7 +123,7 @@
               <i class="fa-solid fa-thumbs-up"></i>
               <a>56 Likes | 231 Dislikes</a>
               <i class="fa-solid fa-thumbs-down"></i>
-            </div> 
+            </div>
           </article>
           <article class="user-posts_post">
             <div class="user-post__header">
