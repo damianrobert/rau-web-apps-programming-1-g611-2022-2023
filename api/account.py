@@ -1,7 +1,7 @@
 import datetime
 
-from app.repository import insert_user
-from app.users import User
+from api.repository import insert_user
+from api.users import User
 
 
 def signup(request_body, connection_string):
