@@ -34,15 +34,20 @@ def insert_user(user, connection_string):
     # create cursor
     cursor = conn.cursor()
 
-    # execute query
-    cursor.execute(query)
+    try:
+        # execute query
+        cursor.execute(query)
 
-    # commit
-    conn.commit()
+        # commit
+        conn.commit()
 
-    # close connection
-    cursor.close()
-    conn.close()
+        # close connection
+        cursor.close()
+        conn.close()
+    except Exception as e:
+        cursor.close()
+        conn.close()
+        raise e
 
 
 def get_all_users(connection_string):
@@ -52,9 +57,14 @@ def get_all_users(connection_string):
 
     cursor = conn.cursor()
 
-    entries = list(cursor.execute(query))
-
-    conn.close()
+    try:
+        entries = list(cursor.execute(query))
+        cursor.close()
+        conn.close()
+    except Exception as e:
+        cursor.close()
+        conn.close()
+        raise e
 
     users = []
     for entry in entries:
@@ -69,9 +79,47 @@ def get_user_by_email(user, connection_string):
 
     conn = sqlite3.connect(connection_string)
     cursor = conn.cursor()
-    entries = cursor.execute(query)
-    user = entries.fetchone()
-    conn.close()
+    try:
+        entries = cursor.execute(query)
+        user = entries.fetchone()
+        cursor.close()
+        conn.close()
+    except Exception as e:
+        cursor.close()
+        conn.close()
+        raise e
 
     existing_user = User.from_list(user)
     return existing_user
+
+
+def get_user_by_id(user_id, connection_string):
+    query = f"SELECT * FROM users WHERE id = {user_id};"
+    conn = sqlite3.connect(connection_string)
+    cursor = conn.cursor()
+    try:
+        data = cursor.execute(query).fetchone()
+        cursor.close()
+        conn.close()
+    except Exception as e:
+        cursor.close()
+        conn.close()
+        raise e
+
+    user = User.from_list(data)
+    return user
+
+
+def delete_user_by_id(user_id, connection_string):
+    query = f"DELETE FROM users WHERE id = {user_id};"
+    conn = sqlite3.connect(connection_string)
+    cursor = conn.cursor()
+    try:
+        cursor.execute(query)
+        conn.commit()
+        cursor.close()
+        conn.close()
+    except Exception as e:
+        cursor.close()
+        conn.close()
+        raise e
