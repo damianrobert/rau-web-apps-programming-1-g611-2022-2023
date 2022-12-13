@@ -1,6 +1,10 @@
 import sqlite3
 
-from app.users import User
+from api.users import User
+
+# TODO: change this path to match the path to your db file.
+# CONNECTION_STRING = "/Users/luchicila/Work/RAU/rau-web-apps-programming-1-g611-2022-2023/datastore/datastore.db"
+CONNECTION_STRING = "../datastore/datastore.db"
 
 
 def insert_user(user, connection_string):
