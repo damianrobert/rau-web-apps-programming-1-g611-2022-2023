@@ -4,7 +4,7 @@ from api.users import User
 
 # TODO: change this path to match the path to your db file.
 # CONNECTION_STRING = "/Users/luchicila/Work/RAU/rau-web-apps-programming-1-g611-2022-2023/datastore/datastore.db"
-CONNECTION_STRING = "../datastore/datastore.db"
+CONNECTION_STRING = r'C:\Users\Damian\OneDrive - UNIVERSITATEA ROMANO-AMERICANA\FACULTATE\AN II\Aplicatii Web\Aplicatie_Web_Seminar\rau-web-apps-programming-1-g611-2022-2023\datastore\datastore.db'
 
 
 def insert_user(user, connection_string):
